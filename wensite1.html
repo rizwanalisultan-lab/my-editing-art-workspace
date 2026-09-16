@@ -1,0 +1,427 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Editing Art Workspace - FIZA</title>
+
+    <style>  
+    /* Gallery */
+
+        .gallery {
+            background-color: #fff5f8;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .gallery h2 {
+            color: #c94f87;
+            text-align: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .art-card {
+            width: 250px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .art-card img {
+            border-radius: 12px;
+            btransition: transform 0.3s ease;ox-shadow: 0 4px 10px rgba(0,0,0,0.12);
+         
+        }
+        .artcard img:hover {
+    transform: scale(1.03);}
+        
+
+        .art-card h3 {
+            color: #d63384;
+        }
+
+        
+    body {
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #c4a2b1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+    
+
+        /* Navigation Bar */
+
+        nav {
+            background-color: #fce4ec;
+            border-radius: 12px;
+            padding: 10px;
+            margin: 20px auto 30px;
+            width: fit-content;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+            border-bottom: 2px solid #c94f87;
+        }
+
+        nav nav a {
+    color: #c94f87;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 17px;
+    display: inline-block;
+    padding: 6px 10px;
+}
+ 
+    nav a:hover {
+    color: #a83d70;
+    transform: translateY(-2px);
+    background-color: #f8bbd0;
+    border-radius: 6px;
+}
+    
+    
+
+
+
+
+        /* Main Section */
+
+        .hero {
+            padding: 100px 20px;
+    
+            background-color: #c21663;
+        
+        }
+
+        h1 #clock {background-color: #fff5f8;
+padding: 10px 20px;
+border-radius: 12px;
+    font-size: 42px;
+    color: #c94f87;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+}
+            
+            
+
+
+        .creator {
+            font-size: 24px;
+            color: #d63384;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+    p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 25px; 
+}
+    
+
+        /* Button */
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #965e77;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            background-color: #a80a51;
+        }
+
+  /* About Section */
+
+.about {
+    padding: 80px 20px;
+    background-color: #ac4b77;
+}
+
+.about h2 {
+    font-size: 40px;
+    color: #be7498;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 19px;
+    line-height: 1.8;
+    color: #6b3a4d;
+} .petals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.petals span {
+    position: absolute;
+    top: -50px;
+    font-size: 25px;
+    animation: fall 10s linear infinite;
+}
+
+.petals span:nth-child(1) {
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.petals span:nth-child(2) {
+    left: 18%;
+    animation-delay: 2s;
+}
+
+.petals span:nth-child(3) {
+    left: 30%;
+    animation-delay: 4s;
+}
+
+.petals span:nth-child(4) {
+    left: 42%;
+    animation-delay: 1s;
+}
+
+.petals span:nth-child(5) {
+    left: 55%;
+    animation-delay: 3s;
+}
+
+.petals span:nth-child(6) {
+    left: 68%;
+    animation-delay: 5s;
+}
+
+.petals span:nth-child(7) {
+    left: 82%;
+    animation-delay: 2.5s;
+}
+
+    
+
+    
+
+.hero,
+.gallery,
+.about,
+.contact {
+    background-color: #975a75;
+    border-radius: 25px;
+    margin: 25px;
+    box-shadow: 0 8px 25px rgba(236, 6, 179, 0.034);
+}
+ @media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        font-size: 15px;
+        margin: 3px 5px;
+        padding: 5px 7px;
+    }
+}
+
+#music {
+        background-color: #fff5f8;
+        border-radius: 15px;
+        padding: 25px;
+        margin: 30px auto;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);}
+
+ </style>
+
+</head>
+
+<body>
+    <div id="clock">00:00:00</div>
+   <h2>My K-Pop Playlist 🎵</h2>
+    <iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1gRalH1mWrP?utm_source=generator"
+    width="100%"
+    height="352"
+    frameBorder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+</iframe>
+    <!-- Navigation -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">My Art</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- Main Section -->
+
+    <div class="hero" id="home"></div>
+
+        <h1>
+            Welcome to My Editing Art Workspace 🌸
+            
+        </h1>
+
+        <div class="creator">
+            — by FZA —
+        </div>
+
+        <p>
+            Explore creativity, digital art,
+            photo editing and graphic design.
+        </p>
+
+        <a href="#" class="button">
+            Explore My Work ✨
+        </a>
+
+    </div>
+
+</body>
+
+</html>    </div>
+     <!-- Gallery Section -->
+
+    <section class="gallery" id="gallery"></section>
+
+        <h2>My Art Gallery 🎨</h2>
+
+        <div class="gallery-container">
+
+            <div class="art-card">
+                <img src="https://picsum.photos/250/200?random=1">
+                <h3>Digital Art 🌸</h3>
+            </div>
+
+            <div class="art-card">
+                <img src="https://picsum.photos/250/200?random=2">
+                <h3>Photo Editing ✨</h3>
+            </div>
+
+            <div class="art-card">
+                <img src="https://picsum.photos/250/200?random=3">
+                <h3>Creative Design 💗</h3>
+            </div>
+
+        </div>
+
+    </section>
+     </section>
+
+
+    <!-- About Section -->
+
+    
+<section class="about" id="about"></section>
+        <h2>About FZA 🌸</h2>
+
+        <p>
+            Welcome to my creative world!
+            I am FZA, and this is my editing art workspace.
+            I love exploring digital art, photo editing,
+            graphic design and creative ideas.
+            This website is a place where I can share
+            my artwork and creativity with the world. ✨
+        </p>
+
+    </section>
+<div class="petals">
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+</div>
+
+</body>
+
+</html>
+<!-- Contact Section -->
+
+<section class="contact" id="contact"></section>
+
+    <h2>Contact Me 💌</h2>
+
+    <p>
+        Have an idea or want to talk about art?
+        Send me a message! 🌸
+    </p>
+
+    <form class="contact-form">
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            placeholder="Write your message..."
+            required
+        ></textarea>
+
+        <button type="submit">
+            Send Message ✨
+        </button>
+
+    </form>
+
+</section>
+<script>
+function updateClock() {
+    const now = new Date();
+    document.getElementById("clock").textContent =
+        now.toLocaleTimeString();
+}
+
+updateClock();
+setInterval(updateClock, 1000);
+</script>
+</body> 
